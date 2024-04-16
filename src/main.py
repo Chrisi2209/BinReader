@@ -1,4 +1,3 @@
-import os
 import sys
 
 def show_binary():
@@ -10,6 +9,8 @@ Pass the path to your binary file as the first argument.
 Optionally you can use the arguments "bin", "dec" or "hex" after
 the path to display the numbers in binary, decimal or hexa-decimal.
 If no such argument is given, it defaults to hex.""")
+            return
+        
         bin_file = sys.argv[1]
     except(IndexError):
         # if there is no path, error
